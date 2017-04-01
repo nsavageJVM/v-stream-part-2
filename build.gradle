@@ -1,0 +1,45 @@
+buildscript {
+	ext {
+		springBootVersion = '1.4.2.RELEASE'
+	}
+	repositories {
+		mavenCentral()
+	}
+	dependencies {
+		classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+	}
+}
+
+apply plugin: 'java'
+apply plugin: 'org.springframework.boot'
+
+jar {
+	baseName = 'v-stream-2'
+	version = '0.0.1-SNAPSHOT'
+}
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+repositories {
+	mavenCentral()
+}
+
+
+dependencies {
+
+	compile('org.springframework.boot:spring-boot-starter')
+	compile('org.slf4j:slf4j-api:1.7.21')
+	compile('ch.qos.logback:logback-classic:1.1.7')
+	compile('org.projectlombok:lombok:1.16.10')
+	compile('org.apache.commons:commons-lang3:3.5')
+	compile('uk.co.caprica:vlcj:3.10.1')
+
+	//jna
+	compile('net.java.dev.jna:jna:4.2.2')
+	compile('net.java.dev.jna:jna-platform:4.2.2')
+
+	testCompile('org.springframework.boot:spring-boot-starter-test')
+	testCompile('org.testfx:testfx-core:4.0.1-alpha')
+	testCompile('org.testfx:testfx-junit:4.0.1-alpha')
+	testCompile('org.testfx:openjfx-monocle:1.8.0_20')
+}

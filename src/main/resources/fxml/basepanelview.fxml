@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<VBox fx:id="mainPane" fx:controller="fish.beans.controllers.BasePanel"
+            minHeight="380" minWidth="680" prefHeight="640.0" prefWidth="1240.0"  xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1">
+
+        <MenuBar fx:id="menuBar" prefHeight="25.0"      >
+            <menus>
+                <Menu mnemonicParsing="false" text="Init  Camera">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#playCam1" text="Start Camera 1" />
+                        <MenuItem mnemonicParsing="false" onAction="#playCam2" text="Start Camera 2" />
+                        <MenuItem mnemonicParsing="false" onAction="#playCam3" text="Start Camera 3" />
+                        <MenuItem mnemonicParsing="false" onAction="#exit" text="Close" />
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+
+
+        <HBox spacing="30" minHeight="480" minWidth="1240" prefHeight="580.0" prefWidth="1240.0">
+
+            <VBox styleClass="spacing-5" VBox.vgrow="ALWAYS" minHeight="480" prefHeight="480.0" >
+                <ImageView fx:id="videoImageView1">
+                    <HBox.margin>
+                        <Insets top="0.0" right="0.0" bottom="40" left="0.0"/>
+                    </HBox.margin>
+                </ImageView>
+                <HBox  prefHeight="40.0" prefWidth="400.0" spacing="5.0" style="-fx-background-color: #3E3E3E;"  >
+                    <padding>
+                        <Insets bottom="5.0" left="10.0" right="10.0" top="15.0" />
+                    </padding>
+                    <children>
+                        <Button text="stop" fx:id="cam1Stop" mnemonicParsing="false" onAction="#stopCam1" />
+                    </children>
+                    <VBox.margin>
+                        <Insets top="40.0" right="0.0" bottom="0" left="0.0"/>
+                    </VBox.margin>
+                </HBox>
+            </VBox>
+            <VBox styleClass="spacing-5" VBox.vgrow="ALWAYS" minHeight="480" prefHeight="480.0">
+                <ImageView fx:id="videoImageView2">
+                    <HBox.margin>
+                        <Insets top="0.0" right="0.0" bottom="40" left="0.0"/>
+                    </HBox.margin>
+                </ImageView>
+                <HBox prefHeight="40.0" prefWidth="400.0" spacing="5.0" style="-fx-background-color: #3E3E3E;"  >
+                    <padding>
+                        <Insets bottom="5.0" left="10.0" right="10.0" top="15.0" />
+                    </padding>
+                    <children>
+                        <Button text="stop" fx:id="cam2Stop" mnemonicParsing="false" onAction="#stopCam2" />
+                    </children>
+                    <VBox.margin>
+                        <Insets top="40.0" right="0.0" bottom="0" left="0.0"/>
+                    </VBox.margin>
+                </HBox>
+            </VBox>
+
+            <VBox styleClass="spacing-5" VBox.vgrow="ALWAYS" minHeight="480" prefHeight="480.0">
+                <ImageView fx:id="videoImageView3">
+                    <HBox.margin>
+                        <Insets top="0.0" right="0.0" bottom="40" left="0.0"/>
+                    </HBox.margin>
+                </ImageView>
+                <HBox prefHeight="40.0" prefWidth="400.0" spacing="5.0" style="-fx-background-color: #3E3E3E;"  >
+                    <padding>
+                        <Insets bottom="5.0" left="10.0" right="10.0" top="15.0" />
+                    </padding>
+                    <children>
+                        <Button text="stop" fx:id="cam3Stop" mnemonicParsing="false" onAction="#stopCam3" />
+                    </children>
+                    <VBox.margin>
+                        <Insets top="40.0" right="0.0" bottom="0" left="0.0"/>
+                    </VBox.margin>
+                </HBox>
+            </VBox>
+            <VBox.margin>
+                <Insets top="40.0" right="0.0" bottom="0" left="20.0"/>
+            </VBox.margin>
+        </HBox>
+
+</VBox>

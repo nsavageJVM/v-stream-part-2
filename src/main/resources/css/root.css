@@ -1,0 +1,28 @@
+
+.boxSpacing {
+    -fx-padding: 10 10 10 10;
+}
+
+.root {
+
+    blue3: #91C9E8;
+    blue1: #00305A;
+    blue2: #004B8D;
+    blue4: #729EBF;
+    blue5: #E8F8FF;
+    blue6: #E5EBFF;
+    -fx-dark-brown: #504E48;
+    -fx-light-brown: #A8A49B;
+    -fx-background-color: blue2;
+}
+
+
+/* TextField */
+.text-input {
+    -fx-opacity: 1.0;
+    -fx-border-color: darkkhaki;
+    -fx-border-style: solid;
+    -fx-border-width: 1px;
+    -fx-border-radius: 3px;
+}
+
