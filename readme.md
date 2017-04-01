@@ -6,8 +6,8 @@ see  [blog Java video streaming part 2](http://nsavagejvm.netlify.com/2017/01/ja
 
 ### Set up
 
-install vlc
-install ffmpeg
+install vlc  
+install ffmpeg  
 this code works with a [golang terminal utility](https://github.com/nsavageJVM/v-stream-util)  that runs ffmpeg and manages transcode files
  
 create video output directory and set up input video src and  paths for video output in config.properties 
