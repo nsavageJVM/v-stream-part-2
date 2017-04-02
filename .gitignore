@@ -27,5 +27,5 @@ nbdist/
 *.log
 info.txt
 lib
-/app.logPathPrefix_IS_UNDEFINED
+app.logPathPrefix_IS_UNDEFINED
 
