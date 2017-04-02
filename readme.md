@@ -46,4 +46,4 @@ begin the transcode to file using the [golang terminal utility](https://github.c
 `java -jar`  `-Dvs.properties=C:\\Users\\USER_HOME_DIR\\v-stream-part-1\\runtime.properties`   `build/libs/v-stream-0.0.1-SNAPSHOT.jar`
 
 
-![Screenshot demo](https://github.com/nsavageJVM/v-stream-part-2/blob/master/demo.png)
+![Screenshot demo](https://github.com/nsavageJVM/v-stream-part-2/blob/master/demo2.png)
