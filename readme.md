@@ -41,9 +41,9 @@ app.video.native.dir=C:\\Program Files(x86)\\VideoLAN\\VLC
 begin the transcode to file using the [golang terminal utility](https://github.com/nsavageJVM/v-stream-util)
 
 ##### Debian
-`java -jar`  `-Dvs.properties=/home/USER_HOME_DIR/aJavaFXSpectrum/v-stream/runtime.properties` `build/libs/v-stream-0.0.1-SNAPSHOT.jar`
+`java -jar`  `-Dvs.properties=/home/USER_HOME_DIR/{path to}/runtime.properties` `build/libs/v-stream-0.0.1-SNAPSHOT.jar`
 #### Windows
-`java -jar`  `-Dvs.properties=C:\\Users\\USER_HOME_DIR\\v-stream-part-1\\runtime.properties`   `build/libs/v-stream-0.0.1-SNAPSHOT.jar`
+`java -jar`  `-Dvs.properties=C:\\Users\\USER_HOME_DIR\\{path to}\\runtime.properties`   `build/libs/v-stream-0.0.1-SNAPSHOT.jar`
 
 
 ![Screenshot demo](https://github.com/nsavageJVM/v-stream-part-2/blob/master/demo2.png)
